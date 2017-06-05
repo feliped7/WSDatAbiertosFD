@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed|exitUntilCollapsed"
+            app:contentScrim="@color/cardview_dark_background"
+            android:elevation="10dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/img_card_detalle"
+                android:scaleType="centerCrop"
+                />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+
+        android:background="@drawable/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+
+            android:weightSum="1">
+
+            <TextView
+                android:fontFamily="casual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Municipio"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/titulo_card"
+                android:id="@+id/txt_municipio"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="casual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ubicacion: "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/titulo_pequeño_card"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <TextView
+                    android:fontFamily="casual"
+                    android:id="@+id/txt_ubicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 0"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/titulo_pequeño_card" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="casual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correo: "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/titulo_pequeño_card"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <TextView
+                    android:fontFamily="casual"
+                    android:id="@+id/txt_correo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 0"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/titulo_pequeño_card" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="casual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Portal: "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/titulo_pequeño_card"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <TextView
+                    android:fontFamily="casual"
+                    android:id="@+id/txt_portal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 0"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/titulo_pequeño_card" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="casual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alcalde: "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/titulo_pequeño_card"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <TextView
+                    android:fontFamily="casual"
+                    android:id="@+id/txt_alcalde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 0"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/titulo_pequeño_card" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="casual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nit: "
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/titulo_pequeño_card"
+                    android:layout_marginRight="10dp"
+                    />
+
+                <TextView
+
+                    android:fontFamily="casual"
+                    android:id="@+id/txt_nit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 0"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/titulo_pequeño_card" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_weight="0.35">
+
+
+            <TextView
+                android:fontFamily="casual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="contacto:"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/titulo_pequeño_card"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:fontFamily="casual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_contacto"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/titulo_pequeño_card"
+                android:autoLink="web" />
+
+            <TextView
+                android:fontFamily="casual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Codigo:"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/titulo_pequeño_card"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:fontFamily="casual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_codigom"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/titulo_pequeño_card"
+                android:autoLink="web" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

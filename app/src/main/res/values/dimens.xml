@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_corner_radius">5dp</dimen>
+    <dimen name="card_text_padding">16dp</dimen>
+    <dimen name="titulo_card">25sp</dimen>
+    <dimen name="tamanio_card">200dp</dimen>
+    <dimen name="titulo_pequeño_card">18sp</dimen>
+
+</resources>
